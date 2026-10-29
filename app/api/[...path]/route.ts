@@ -1,7 +1,7 @@
 import {env} from 'cloudflare:workers';
 import {z} from 'zod';
-import {db,initialize,identity,materialRow,taskRow} from '../../../lib/server';
-import {materialInput,taskInput,csvEscape} from '../../../lib/validation';
+import {db,initialize,identity,materialRow,taskRow,actionRow} from '../../../lib/server';
+import {materialInput,taskInput,actionInput,csvEscape} from '../../../lib/validation';
 export const dynamic='force-dynamic';
 function json(value:unknown,status=200){return Response.json(value,{status,headers:{'Cache-Control':'no-store'}});}
 class Problem extends Error{constructor(public status:number,message:string){super(message);}}
@@ -13,7 +13,12 @@ function where(url:URL,kind:string){const a:unknown[]=[url.searchParams.get('arc
   if(status){w+=' AND status=?';a.push(status);}if(material){w+=' AND EXISTS(SELECT 1 FROM json_each(tasks.material_ids) WHERE value=?)';a.push(material);}
  }return {w,a};}
 async function checkMaterials(ids:string[]){if(new Set(ids).size!==ids.length)throw new Problem(400,'物料不能重复选择');if(!ids.length)return;const d=db();const r=await d.prepare(`SELECT id FROM materials WHERE archived=0 AND id IN (${ids.map(()=>'?').join(',')})`).bind(...ids).all();if(r.results.length!==ids.length)throw new Problem(400,'关联的物料已被归档，请刷新后重新选择');}
-async function enrich(rows:any[]){const items=rows.map(taskRow);const ids=[...new Set(items.flatMap(i=>i.materialIds))];const names=new Map<string,string>();for(let start=0;start<ids.length;start+=80){const chunk=ids.slice(start,start+80);const r=await db().prepare(`SELECT id,name FROM materials WHERE id IN (${chunk.map(()=>'?').join(',')})`).bind(...chunk).all<any>();for(const m of r.results)names.set(m.id,m.name);}return items.map(t=>({...t,materialNames:t.materialIds.map((id:string)=>names.get(id)||'已移除物料')}));}
+type NamedTask=ReturnType<typeof taskRow>&{materialNames:string[]};
+type NamedAction=ReturnType<typeof actionRow>&{materialNames:string[]};
+async function enrich(rows:any[],kind?:'tasks'):Promise<NamedTask[]>;
+async function enrich(rows:any[],kind:'actions'):Promise<NamedAction[]>;
+async function enrich(rows:any[],kind:'tasks'|'actions'):Promise<(NamedTask|NamedAction)[]>;
+async function enrich(rows:any[],kind:'tasks'|'actions'='tasks'){const items=rows.map(kind==='actions'?actionRow:taskRow);const ids=[...new Set(items.flatMap(i=>i.materialIds))];const names=new Map<string,string>();for(let start=0;start<ids.length;start+=80){const chunk=ids.slice(start,start+80);const r=await db().prepare(`SELECT id,name FROM materials WHERE id IN (${chunk.map(()=>'?').join(',')})`).bind(...chunk).all<any>();for(const m of r.results)names.set(m.id,m.name);}return items.map(t=>({...t,materialNames:t.materialIds.map((id:string)=>names.get(id)||'已移除物料')}));}
 async function handle(req:Request){
  try{
   const url=new URL(req.url),parts=url.pathname.split('/').filter(Boolean).slice(1),[kind,id,action]=parts;
@@ -28,21 +33,21 @@ async function handle(req:Request){
   }
   if(kind==='me'&&req.method==='GET')return json(await identity());
   if(kind==='stats'&&req.method==='GET'){
-   const r=await db().batch<{n:number}>([db().prepare('SELECT COUNT(*) n FROM tasks WHERE archived=0'),db().prepare('SELECT COUNT(*) n FROM materials WHERE archived=0'),db().prepare("SELECT COUNT(*) n FROM tasks WHERE archived=0 AND (scenes='[]' OR material_ids='[]')"),db().prepare("SELECT COUNT(*) n FROM tasks WHERE archived=0 AND status='已完成'")]);return json({tasks:r[0].results[0].n,materials:r[1].results[0].n,pending:r[2].results[0].n,completed:r[3].results[0].n});
+   const r=await db().batch<{n:number}>([db().prepare('SELECT COUNT(*) n FROM tasks WHERE archived=0'),db().prepare('SELECT COUNT(*) n FROM materials WHERE archived=0'),db().prepare("SELECT COUNT(*) n FROM tasks WHERE archived=0 AND (scenes='[]' OR material_ids='[]')"),db().prepare("SELECT COUNT(*) n FROM tasks WHERE archived=0 AND status='已完成'"),db().prepare('SELECT COUNT(*) n FROM actions WHERE archived=0')]);return json({tasks:r[0].results[0].n,materials:r[1].results[0].n,pending:r[2].results[0].n,completed:r[3].results[0].n,actions:r[4].results[0].n});
   }
-  if((kind==='tasks'||kind==='materials')&&req.method==='GET'){
-   const d=db();if(id){const row=await d.prepare(`SELECT * FROM ${kind} WHERE id=?`).bind(id).first();if(!row)throw new Problem(404,'记录不存在');return json(kind==='tasks'?(await enrich([row]))[0]:materialRow(row));}
+  if((kind==='tasks'||kind==='materials'||kind==='actions')&&req.method==='GET'){
+   const d=db();if(id){const row=await d.prepare(`SELECT * FROM ${kind} WHERE id=?`).bind(id).first();if(!row)throw new Problem(404,'记录不存在');return json(kind==='materials'?materialRow(row):(await enrich([row],kind))[0]);}
    const page=positive(url.searchParams.get('page'),200000,1),size=positive(url.searchParams.get('size'),100,50);const {w,a}=where(url,kind);
    const total=await d.prepare(`SELECT COUNT(*) n FROM ${kind} WHERE ${w}`).bind(...a).first<{n:number}>();
    const rows=await d.prepare(`SELECT * FROM ${kind} WHERE ${w} ORDER BY ${kind==='tasks'?'created_at,id':'name,id'} LIMIT ? OFFSET ?`).bind(...a,size,(page-1)*size).all();
-   return json({items:kind==='tasks'?await enrich(rows.results):rows.results.map(materialRow),total:total?.n||0,page,size});
+   return json({items:kind==='materials'?rows.results.map(materialRow):await enrich(rows.results,kind),total:total?.n||0,page,size});
   }
-  if((kind==='tasks'||kind==='materials')&&(req.method==='POST'||req.method==='PUT')){
+  if((kind==='tasks'||kind==='materials'||kind==='actions')&&(req.method==='POST'||req.method==='PUT')){
    const d=db();const now=new Date().toISOString();
    if(action==='archive'||action==='restore'){
     const body=z.object({version:z.number().int().positive()}).parse(await req.json());
-    if(kind==='materials'&&action==='archive'){const used=await d.prepare('SELECT COUNT(*) n FROM tasks WHERE archived=0 AND EXISTS(SELECT 1 FROM json_each(tasks.material_ids) WHERE value=?)').bind(id).first<{n:number}>();if(used?.n)throw new Problem(409,`该物料仍被 ${used.n} 个任务使用，请先解除关联`);}
-    if(kind==='tasks'&&action==='restore'){const old=await d.prepare('SELECT material_ids FROM tasks WHERE id=?').bind(id).first<{material_ids:string}>();if(old)await checkMaterials(JSON.parse(old.material_ids));}
+    if(kind==='materials'&&action==='archive'){const used=await d.prepare('SELECT COUNT(*) n FROM (SELECT id FROM tasks WHERE archived=0 AND EXISTS(SELECT 1 FROM json_each(tasks.material_ids) WHERE value=?) UNION ALL SELECT id FROM actions WHERE archived=0 AND EXISTS(SELECT 1 FROM json_each(actions.material_ids) WHERE value=?))').bind(id,id).first<{n:number}>();if(used?.n)throw new Problem(409,`该物料仍被 ${used.n} 个任务或动作使用，请先解除关联`);}
+    if(kind!=='materials'&&action==='restore'){const old=await d.prepare(`SELECT material_ids FROM ${kind} WHERE id=?`).bind(id).first<{material_ids:string}>();if(old)await checkMaterials(JSON.parse(old.material_ids));}
     const r=await d.prepare(`UPDATE ${kind} SET archived=?,version=version+1,updated_at=? WHERE id=? AND version=? RETURNING id`).bind(action==='archive'?1:0,now,id,body.version).first();if(!r)throw new Problem(409,'记录已被更新，请刷新后重试');return json({ok:true});
    }
    const edit=!!id;const nextId=id||crypto.randomUUID();
@@ -51,13 +56,18 @@ async function handle(req:Request){
     const values=[b.name,b.notes,JSON.stringify(b.variants)];
     const r=edit?await d.prepare('UPDATE materials SET name=?,notes=?,variants=?,version=version+1,updated_at=? WHERE id=? AND version=? AND archived=0 RETURNING *').bind(...values,now,nextId,b.version).first():await d.prepare('INSERT INTO materials(name,notes,variants,created_at,updated_at,id) VALUES(?,?,?,?,?,?) RETURNING *').bind(...values,now,now,nextId).first();if(!r)throw new Problem(409,'该物料已被更新，请刷新后重试');return json(materialRow(r));
    }
+   if(kind==='actions'){
+    const b=actionInput.parse(await req.json());await checkMaterials(b.materialIds);if(edit&&!b.version)throw new Problem(400,'缺少记录版本');
+    const values=[b.name,JSON.stringify(b.materialIds),b.notes];
+    const r=edit?await d.prepare('UPDATE actions SET name=?,material_ids=?,notes=?,version=version+1,updated_at=? WHERE id=? AND version=? AND archived=0 RETURNING *').bind(...values,now,nextId,b.version).first():await d.prepare('INSERT INTO actions(name,material_ids,notes,created_at,updated_at,id) VALUES(?,?,?,?,?,?) RETURNING *').bind(...values,now,now,nextId).first();if(!r)throw new Problem(409,'该动作已被更新，请刷新后重试');return json((await enrich([r],'actions'))[0]);
+   }
    const b=taskInput.parse(await req.json());await checkMaterials(b.materialIds);if(edit&&!b.version)throw new Problem(400,'缺少记录版本');
    if(b.status!=='待整理'&&(!b.materialIds.length||!b.scenes.length))throw new Problem(400,'请先填写所属场景和涉及物料，再推进任务状态');
    const values=[b.name,JSON.stringify([...new Set(b.scenes)]),JSON.stringify(b.materialIds),b.notes,b.status];
    const r=edit?await d.prepare('UPDATE tasks SET name=?,scenes=?,material_ids=?,notes=?,status=?,version=version+1,updated_at=? WHERE id=? AND version=? AND archived=0 RETURNING *').bind(...values,now,nextId,b.version).first():await d.prepare('INSERT INTO tasks(name,scenes,material_ids,notes,status,created_at,updated_at,id) VALUES(?,?,?,?,?,?,?,?) RETURNING *').bind(...values,now,now,nextId).first();if(!r)throw new Problem(409,'该任务已被更新，请刷新后重试');return json((await enrich([r]))[0]);
   }
   if(kind==='bulk'&&req.method==='POST'){
-   const b=z.object({table:z.enum(['tasks','materials']),names:z.array(z.string().trim().min(1).max(100)).min(1).max(500)}).parse(await req.json());
+   const b=z.object({table:z.enum(['tasks','materials','actions']),names:z.array(z.string().trim().min(1).max(100)).min(1).max(500)}).parse(await req.json());
    const unique=[...new Set(b.names)];const existing=await db().prepare(`SELECT name FROM ${b.table}`).all<{name:string}>();const names=new Set(existing.results.map(r=>r.name));const fresh=unique.filter(n=>!names.has(n));const now=new Date().toISOString();const statements=fresh.map(n=>db().prepare(`INSERT INTO ${b.table}(id,name,created_at,updated_at) VALUES(?,?,?,?)`).bind(crypto.randomUUID(),n,now,now));for(let i=0;i<statements.length;i+=25)await db().batch(statements.slice(i,i+25));return json({created:fresh.length,skipped:b.names.length-fresh.length});
   }
   if(kind==='upload'&&req.method==='POST'){
@@ -66,12 +76,13 @@ async function handle(req:Request){
    const key=`uploads/${crypto.randomUUID()}.${ext}`;await env.BUCKET.put(key,bytes,{httpMetadata:{contentType:type}});return json({key,url:'/api/images/'+key});
   }
   if(kind==='export'&&req.method==='GET'){
-   const table=url.searchParams.get('table')==='materials'?'materials':'tasks';const {w,a}=where(url,table);const r=await db().prepare(`SELECT * FROM ${table} WHERE ${w} ORDER BY created_at,id`).bind(...a).all<any>();let rows:unknown[][];
+   const table=url.searchParams.get('table')==='materials'?'materials':url.searchParams.get('table')==='actions'?'actions':'tasks';const {w,a}=where(url,table);const r=await db().prepare(`SELECT * FROM ${table} WHERE ${w} ORDER BY created_at,id`).bind(...a).all<any>();let rows:unknown[][];
    if(table==='tasks'){const items=await enrich(r.results);rows=[['任务编号','任务名称','所属场景','涉及物料','状态','任务说明','京东英文任务','京东原表行号'],...items.map(t=>[t.id,t.name,t.scenes.join('、'),t.materialNames.join('、'),t.status,t.notes,t.sourceEn,t.sourceRow])];}
+   else if(table==='actions'){const items=await enrich(r.results,'actions');const count=Math.max(1,...items.map(t=>t.materialIds.length));rows=[['动作编号','动作名称',...Array.from({length:count},(_,i)=>`物料 ${i+1}`),'动作说明'],...items.map(t=>[t.id,t.name,...Array.from({length:count},(_,i)=>t.materialNames[i]||''),t.notes])];}
    else{const items=r.results.map(materialRow);rows=[['物料编号','物料名称','备注','款式图片'],...items.map(m=>[m.id,m.name,m.notes,m.variants.map((v:any)=>`${v.label}: ${url.origin}/api/images/${v.key}`).join('\n')])];}
    return new Response('\uFEFF'+rows.map(r=>r.map(csvEscape).join(',')).join('\r\n'),{headers:{'Content-Type':'text/csv; charset=utf-8','Content-Disposition':`attachment; filename="${table}.csv"`,'Cache-Control':'no-store'}});
   }
   throw new Problem(404,'找不到该操作');
- }catch(e:any){if(e instanceof z.ZodError)return json({error:e.issues[0]?.message||'输入不正确'},400);if(e instanceof Problem)return json({error:e.message},e.status);if(String(e?.message).includes('UNIQUE constraint'))return json({error:'物料名称已经存在，请在已有物料下添加款式'},409);console.error('Request failed',e?.message);return json({error:'暂时无法保存或读取，请稍后重试'},500);}
+ }catch(e:any){if(e instanceof z.ZodError)return json({error:e.issues[0]?.message||'输入不正确'},400);if(e instanceof Problem)return json({error:e.message},e.status);if(String(e?.message).includes('UNIQUE constraint'))return json({error:String(e.message).includes('actions.')?'动作名称已经存在，请编辑已有动作':'物料名称已经存在，请在已有物料下添加款式'},409);console.error('Request failed',e?.message);return json({error:'暂时无法保存或读取，请稍后重试'},500);}
 }
 export const GET=handle;export const POST=handle;export const PUT=handle;

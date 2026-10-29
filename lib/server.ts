@@ -24,4 +24,5 @@ export async function identity(){
  return {signedIn:!!user,canEdit,displayName:user?.displayName||''};
 }
 export function materialRow(r:any){return {id:r.id,name:r.name,notes:r.notes,variants:JSON.parse(r.variants),version:r.version,archived:r.archived,updatedAt:r.updated_at,taskCount:r.task_count||0};}
+export function actionRow(r:any){return {id:r.id,name:r.name,materialIds:JSON.parse(r.material_ids),notes:r.notes,version:r.version,archived:r.archived,updatedAt:r.updated_at};}
 export function taskRow(r:any){return {id:r.id,name:r.name,scenes:JSON.parse(r.scenes),materialIds:JSON.parse(r.material_ids),notes:r.notes,status:r.status,sourceEn:r.source_en,sourceRow:r.source_row,version:r.version,archived:r.archived,updatedAt:r.updated_at};}

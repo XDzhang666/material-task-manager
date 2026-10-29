@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "采集工作台 · 任务与物料",
-  description: "以物料为中心组织数据采集任务，管理物料款式与参考图片。",
+  title: "采集工作台 · 任务、物料与动作",
+  description: "以物料为中心组织数据采集任务，管理物料款式、参考图片和动作关联。",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
