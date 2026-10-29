@@ -1,0 +1,2376 @@
+{
+  "tasks": [
+    {
+      "id": "JD-0001",
+      "name": "拧开瓶盖",
+      "sourceEn": "Twist off the bottle cap",
+      "sourceRow": 1
+    },
+    {
+      "id": "JD-0002",
+      "name": "撕开封口",
+      "sourceEn": "Tear open seal",
+      "sourceRow": 2
+    },
+    {
+      "id": "JD-0003",
+      "name": "使用茶壶",
+      "sourceEn": "Operate teapot",
+      "sourceRow": 3
+    },
+    {
+      "id": "JD-0004",
+      "name": "组装盒子",
+      "sourceEn": "Assemble the box",
+      "sourceRow": 4
+    },
+    {
+      "id": "JD-0005",
+      "name": "铺设泡沫地垫",
+      "sourceEn": "Install foam floor mats",
+      "sourceRow": 5
+    },
+    {
+      "id": "JD-0006",
+      "name": "使用螺丝刀",
+      "sourceEn": "Use the screwdriver",
+      "sourceRow": 6
+    },
+    {
+      "id": "JD-0007",
+      "name": "操作蒸蛋器",
+      "sourceEn": "Operate the egg steamer",
+      "sourceRow": 7
+    },
+    {
+      "id": "JD-0008",
+      "name": "操作除螨仪",
+      "sourceEn": "Operate the mite remover",
+      "sourceRow": 8
+    },
+    {
+      "id": "JD-0009",
+      "name": "打开护手霜",
+      "sourceEn": "Open the hand cream",
+      "sourceRow": 9
+    },
+    {
+      "id": "JD-0010",
+      "name": "开葡萄酒",
+      "sourceEn": "Open the wine",
+      "sourceRow": 10
+    },
+    {
+      "id": "JD-0011",
+      "name": "操作微波炉",
+      "sourceEn": "Operate the microwave oven",
+      "sourceRow": 11
+    },
+    {
+      "id": "JD-0012",
+      "name": "开罐头",
+      "sourceEn": "Can Opening",
+      "sourceRow": 12
+    },
+    {
+      "id": "JD-0013",
+      "name": "操作微波炉",
+      "sourceEn": "Operate the microwave",
+      "sourceRow": 13
+    },
+    {
+      "id": "JD-0014",
+      "name": "操作燃气蒸锅",
+      "sourceEn": "Operate gas steamer",
+      "sourceRow": 14
+    },
+    {
+      "id": "JD-0015",
+      "name": "使用汤锅",
+      "sourceEn": "Operate stockpot",
+      "sourceRow": 15
+    },
+    {
+      "id": "JD-0016",
+      "name": "操作电蒸锅",
+      "sourceEn": "Operate electric steamer",
+      "sourceRow": 16
+    },
+    {
+      "id": "JD-0017",
+      "name": "操作豆浆机",
+      "sourceEn": "Operate the soy milk maker",
+      "sourceRow": 17
+    },
+    {
+      "id": "JD-0018",
+      "name": "操作切丝机",
+      "sourceEn": "Operate shredder",
+      "sourceRow": 18
+    },
+    {
+      "id": "JD-0019",
+      "name": "使用厨房卷纸",
+      "sourceEn": "Operate kitchen paper roll",
+      "sourceRow": 19
+    },
+    {
+      "id": "JD-0020",
+      "name": "操作绞肉机",
+      "sourceEn": "Operate the meat grinder",
+      "sourceRow": 20
+    },
+    {
+      "id": "JD-0021",
+      "name": "使用砂锅",
+      "sourceEn": "Operate clay pot",
+      "sourceRow": 21
+    },
+    {
+      "id": "JD-0022",
+      "name": "使用手动研磨器",
+      "sourceEn": "Operate manual grinder",
+      "sourceRow": 22
+    },
+    {
+      "id": "JD-0023",
+      "name": "操作煮茶器",
+      "sourceEn": "Operate tea maker",
+      "sourceRow": 23
+    },
+    {
+      "id": "JD-0024",
+      "name": "操作电动研磨器",
+      "sourceEn": "Operate electric grinder",
+      "sourceRow": 24
+    },
+    {
+      "id": "JD-0025",
+      "name": "操作烤箱",
+      "sourceEn": "Operate oven",
+      "sourceRow": 25
+    },
+    {
+      "id": "JD-0026",
+      "name": "使用蛋清分离器",
+      "sourceEn": "Operate egg separator",
+      "sourceRow": 26
+    },
+    {
+      "id": "JD-0027",
+      "name": "操作电饼铛",
+      "sourceEn": "Operate electric griddle",
+      "sourceRow": 27
+    },
+    {
+      "id": "JD-0028",
+      "name": "使用电热垫",
+      "sourceEn": "Operate electric heating pad",
+      "sourceRow": 28
+    },
+    {
+      "id": "JD-0029",
+      "name": "使用手动研磨器",
+      "sourceEn": "Operate the manual grinder",
+      "sourceRow": 29
+    },
+    {
+      "id": "JD-0030",
+      "name": "使用食物夹",
+      "sourceEn": "Operate food tongs",
+      "sourceRow": 30
+    },
+    {
+      "id": "JD-0031",
+      "name": "操作电热水壶",
+      "sourceEn": "Electric Kettle Operation",
+      "sourceRow": 31
+    },
+    {
+      "id": "JD-0032",
+      "name": "操作开关",
+      "sourceEn": "Switch Operation",
+      "sourceRow": 32
+    },
+    {
+      "id": "JD-0033",
+      "name": "操作微波炉",
+      "sourceEn": "Microwave Operation",
+      "sourceRow": 33
+    },
+    {
+      "id": "JD-0034",
+      "name": "使用遥控器",
+      "sourceEn": "Remote Control Operation",
+      "sourceRow": 34
+    },
+    {
+      "id": "JD-0035",
+      "name": "操作冰箱",
+      "sourceEn": "Refrigerator Operation",
+      "sourceRow": 35
+    },
+    {
+      "id": "JD-0036",
+      "name": "操作冰箱",
+      "sourceEn": "Operate refrigerator",
+      "sourceRow": 36
+    },
+    {
+      "id": "JD-0037",
+      "name": "操作烤箱",
+      "sourceEn": "Operate the oven",
+      "sourceRow": 37
+    },
+    {
+      "id": "JD-0038",
+      "name": "操作个人护理电器",
+      "sourceEn": "Personal care appliance operation",
+      "sourceRow": 38
+    },
+    {
+      "id": "JD-0039",
+      "name": "操作电脑及外设",
+      "sourceEn": "Computer and peripheral operation",
+      "sourceRow": 39
+    },
+    {
+      "id": "JD-0040",
+      "name": "操作电饼铛",
+      "sourceEn": "Operate the electric griddle",
+      "sourceRow": 40
+    },
+    {
+      "id": "JD-0041",
+      "name": "操作厨房小家电",
+      "sourceEn": "Kitchen small appliance operation",
+      "sourceRow": 41
+    },
+    {
+      "id": "JD-0042",
+      "name": "操作风扇",
+      "sourceEn": "Operate the fan",
+      "sourceRow": 42
+    },
+    {
+      "id": "JD-0043",
+      "name": "操作智能饮水机",
+      "sourceEn": "Operate smart water dispenser",
+      "sourceRow": 43
+    },
+    {
+      "id": "JD-0044",
+      "name": "操作榨汁机",
+      "sourceEn": "Operate juicer",
+      "sourceRow": 44
+    },
+    {
+      "id": "JD-0045",
+      "name": "拉窗帘",
+      "sourceEn": "Draw the curtains",
+      "sourceRow": 45
+    },
+    {
+      "id": "JD-0046",
+      "name": "整理冰箱",
+      "sourceEn": "Fridge organization",
+      "sourceRow": 46
+    },
+    {
+      "id": "JD-0047",
+      "name": "操作电风扇",
+      "sourceEn": "Operate electric fan",
+      "sourceRow": 47
+    },
+    {
+      "id": "JD-0048",
+      "name": "操作抽油烟机",
+      "sourceEn": "Operate the range hood",
+      "sourceRow": 48
+    },
+    {
+      "id": "JD-0049",
+      "name": "使用吹风机",
+      "sourceEn": "Operate hair dryer",
+      "sourceRow": 49
+    },
+    {
+      "id": "JD-0050",
+      "name": "使用便携式手持挂烫机",
+      "sourceEn": "Operate the portable handheld garment steamer",
+      "sourceRow": 50
+    },
+    {
+      "id": "JD-0051",
+      "name": "操作蒸蛋器",
+      "sourceEn": "Operate the egg steamer",
+      "sourceRow": 51
+    },
+    {
+      "id": "JD-0052",
+      "name": "操作养生壶",
+      "sourceEn": "Operate the health pot",
+      "sourceRow": 52
+    },
+    {
+      "id": "JD-0053",
+      "name": "操作落地扇",
+      "sourceEn": "Operate pedestal fan",
+      "sourceRow": 53
+    },
+    {
+      "id": "JD-0054",
+      "name": "使用电熨斗",
+      "sourceEn": "Operate the electric iron",
+      "sourceRow": 54
+    },
+    {
+      "id": "JD-0055",
+      "name": "使用挂烫机",
+      "sourceEn": "Operate the garment steamer",
+      "sourceRow": 55
+    },
+    {
+      "id": "JD-0056",
+      "name": "使用打蛋器",
+      "sourceEn": "Operate egg beater",
+      "sourceRow": 56
+    },
+    {
+      "id": "JD-0057",
+      "name": "使用手持挂烫机",
+      "sourceEn": "Operate the handheld garment steamer",
+      "sourceRow": 57
+    },
+    {
+      "id": "JD-0058",
+      "name": "给冰箱除霜",
+      "sourceEn": "Defrost refrigerator",
+      "sourceRow": 58
+    },
+    {
+      "id": "JD-0059",
+      "name": "使用立式挂烫机",
+      "sourceEn": "Operate the vertical garment steamer",
+      "sourceRow": 59
+    },
+    {
+      "id": "JD-0060",
+      "name": "操作除螨仪",
+      "sourceEn": "Operate the mite remover",
+      "sourceRow": 60
+    },
+    {
+      "id": "JD-0061",
+      "name": "操作加湿器",
+      "sourceEn": "Operate humidifier",
+      "sourceRow": 61
+    },
+    {
+      "id": "JD-0062",
+      "name": "打开药品包装",
+      "sourceEn": "open the medicine packaging",
+      "sourceRow": 62
+    },
+    {
+      "id": "JD-0063",
+      "name": "使用电动剃须刀",
+      "sourceEn": "Operate electric shaver",
+      "sourceRow": 63
+    },
+    {
+      "id": "JD-0064",
+      "name": "操作电热锅",
+      "sourceEn": "Operate electric pot",
+      "sourceRow": 64
+    },
+    {
+      "id": "JD-0065",
+      "name": "使用电动牙刷",
+      "sourceEn": "Operate electric toothbrush",
+      "sourceRow": 65
+    },
+    {
+      "id": "JD-0066",
+      "name": "操作烘干机",
+      "sourceEn": "Operate the dryer",
+      "sourceRow": 66
+    },
+    {
+      "id": "JD-0067",
+      "name": "操作面包机",
+      "sourceEn": "Operate bread maker",
+      "sourceRow": 67
+    },
+    {
+      "id": "JD-0068",
+      "name": "操作智能门锁",
+      "sourceEn": "Operate smart lock",
+      "sourceRow": 68
+    },
+    {
+      "id": "JD-0069",
+      "name": "操作电饼铛",
+      "sourceEn": "Operate electric griddle",
+      "sourceRow": 69
+    },
+    {
+      "id": "JD-0070",
+      "name": "操作足浴桶",
+      "sourceEn": "Operate the foot spa bucket",
+      "sourceRow": 70
+    },
+    {
+      "id": "JD-0071",
+      "name": "操作空气净化器",
+      "sourceEn": "Operate air purifier",
+      "sourceRow": 71
+    },
+    {
+      "id": "JD-0072",
+      "name": "操作冰淇淋机",
+      "sourceEn": "Operate ice cream machine",
+      "sourceRow": 72
+    },
+    {
+      "id": "JD-0073",
+      "name": "使用家电",
+      "sourceEn": "Appliance usage",
+      "sourceRow": 73
+    },
+    {
+      "id": "JD-0074",
+      "name": "操作取暖器",
+      "sourceEn": "Operate heater",
+      "sourceRow": 74
+    },
+    {
+      "id": "JD-0075",
+      "name": "排查故障",
+      "sourceEn": "Troubleshooting",
+      "sourceRow": 75
+    },
+    {
+      "id": "JD-0076",
+      "name": "操作豆浆机",
+      "sourceEn": "Operate soy milk maker",
+      "sourceRow": 76
+    },
+    {
+      "id": "JD-0077",
+      "name": "操作煎药壶",
+      "sourceEn": "Operate the herbal medicine pot",
+      "sourceRow": 77
+    },
+    {
+      "id": "JD-0078",
+      "name": "空气净化器",
+      "sourceEn": "Air purifier",
+      "sourceRow": 78
+    },
+    {
+      "id": "JD-0079",
+      "name": "操作干衣机",
+      "sourceEn": "Operate the clothes dryer",
+      "sourceRow": 79
+    },
+    {
+      "id": "JD-0080",
+      "name": "使用电热毯",
+      "sourceEn": "Operate electric blanket",
+      "sourceRow": 80
+    },
+    {
+      "id": "JD-0081",
+      "name": "操作除湿机",
+      "sourceEn": "operate the dehumidifier",
+      "sourceRow": 81
+    },
+    {
+      "id": "JD-0082",
+      "name": "操作饮水机",
+      "sourceEn": "Operate water dispenser",
+      "sourceRow": 82
+    },
+    {
+      "id": "JD-0083",
+      "name": "使用吹风机",
+      "sourceEn": "Operate the hair dryer",
+      "sourceRow": 83
+    },
+    {
+      "id": "JD-0084",
+      "name": "操作咖啡机",
+      "sourceEn": "Operate coffee maker",
+      "sourceRow": 84
+    },
+    {
+      "id": "JD-0085",
+      "name": "操作酸奶机",
+      "sourceEn": "Operate the yogurt maker",
+      "sourceRow": 85
+    },
+    {
+      "id": "JD-0086",
+      "name": "操作缝纫机",
+      "sourceEn": "Operate the sewing machine",
+      "sourceRow": 86
+    },
+    {
+      "id": "JD-0087",
+      "name": "使用毛球修剪器",
+      "sourceEn": "Operate lint remover",
+      "sourceRow": 87
+    },
+    {
+      "id": "JD-0088",
+      "name": "操作烤面包机",
+      "sourceEn": "Operate the toaster",
+      "sourceRow": 88
+    },
+    {
+      "id": "JD-0089",
+      "name": "使用手动切片器",
+      "sourceEn": "Operate the manual slicer",
+      "sourceRow": 89
+    },
+    {
+      "id": "JD-0090",
+      "name": "取出并使用",
+      "sourceEn": "Take out and use",
+      "sourceRow": 90
+    },
+    {
+      "id": "JD-0091",
+      "name": "密封收纳",
+      "sourceEn": "Seal for storage",
+      "sourceRow": 91
+    },
+    {
+      "id": "JD-0092",
+      "name": "拧瓶盖",
+      "sourceEn": "Twist bottle cap",
+      "sourceRow": 92
+    },
+    {
+      "id": "JD-0093",
+      "name": "打开电子产品包装",
+      "sourceEn": "Open the electronic product packaging",
+      "sourceRow": 93
+    },
+    {
+      "id": "JD-0094",
+      "name": "使用雨伞",
+      "sourceEn": "Operate umbrella",
+      "sourceRow": 94
+    },
+    {
+      "id": "JD-0095",
+      "name": "打开文具包装",
+      "sourceEn": "Open the stationery packaging",
+      "sourceRow": 95
+    },
+    {
+      "id": "JD-0096",
+      "name": "拉拉链",
+      "sourceEn": "Pull zipper",
+      "sourceRow": 96
+    },
+    {
+      "id": "JD-0097",
+      "name": "扣纽扣",
+      "sourceEn": "Button",
+      "sourceRow": 97
+    },
+    {
+      "id": "JD-0098",
+      "name": "拆快递包装",
+      "sourceEn": "Open Express Packaging",
+      "sourceRow": 98
+    },
+    {
+      "id": "JD-0099",
+      "name": "使用标签贴纸",
+      "sourceEn": "Use label sticker",
+      "sourceRow": 99
+    },
+    {
+      "id": "JD-0100",
+      "name": "撕开封口",
+      "sourceEn": "Tear open seal",
+      "sourceRow": 100
+    },
+    {
+      "id": "JD-0101",
+      "name": "使用保鲜膜罩",
+      "sourceEn": "Operate plastic wrap cover",
+      "sourceRow": 101
+    },
+    {
+      "id": "JD-0102",
+      "name": "使用双面胶",
+      "sourceEn": "Use double-sided tape",
+      "sourceRow": 102
+    },
+    {
+      "id": "JD-0103",
+      "name": "挤牙膏",
+      "sourceEn": "Squeeze toothpaste",
+      "sourceRow": 103
+    },
+    {
+      "id": "JD-0104",
+      "name": "打开口罩包装",
+      "sourceEn": "Open mask package",
+      "sourceRow": 104
+    },
+    {
+      "id": "JD-0105",
+      "name": "打开厨具包装",
+      "sourceEn": "Open kitchenware packages",
+      "sourceRow": 105
+    },
+    {
+      "id": "JD-0106",
+      "name": "使用绷带",
+      "sourceEn": "Use bandage",
+      "sourceRow": 106
+    },
+    {
+      "id": "JD-0107",
+      "name": "使用一次性纸杯",
+      "sourceEn": "Use disposable paper cup",
+      "sourceRow": 107
+    },
+    {
+      "id": "JD-0108",
+      "name": "从球筒中取出羽毛球",
+      "sourceEn": "Take shuttlecock from tube",
+      "sourceRow": 108
+    },
+    {
+      "id": "JD-0109",
+      "name": "打开护手霜",
+      "sourceEn": "Open hand cream",
+      "sourceRow": 109
+    },
+    {
+      "id": "JD-0110",
+      "name": "打开铁盒",
+      "sourceEn": "Open tin box",
+      "sourceRow": 110
+    },
+    {
+      "id": "JD-0111",
+      "name": "使用折叠椅",
+      "sourceEn": "Operate folding chair",
+      "sourceRow": 111
+    },
+    {
+      "id": "JD-0112",
+      "name": "使用电工绝缘胶带",
+      "sourceEn": "Use electrical insulation tape",
+      "sourceRow": 112
+    },
+    {
+      "id": "JD-0113",
+      "name": "使用扳手",
+      "sourceEn": "Use wrench",
+      "sourceRow": 113
+    },
+    {
+      "id": "JD-0114",
+      "name": "合上铁盒",
+      "sourceEn": "Close tin box",
+      "sourceRow": 114
+    },
+    {
+      "id": "JD-0115",
+      "name": "使用折叠桌",
+      "sourceEn": "Operate the folding table",
+      "sourceRow": 115
+    },
+    {
+      "id": "JD-0116",
+      "name": "给电蚊拍充电",
+      "sourceEn": "Charge electric mosquito swatter",
+      "sourceRow": 116
+    },
+    {
+      "id": "JD-0117",
+      "name": "粘贴挂钩",
+      "sourceEn": "Attach hook with adhesive",
+      "sourceRow": 117
+    },
+    {
+      "id": "JD-0118",
+      "name": "使用一次性鞋套",
+      "sourceEn": "Use disposable shoe cover",
+      "sourceRow": 118
+    },
+    {
+      "id": "JD-0119",
+      "name": "使用注水热水袋",
+      "sourceEn": "Use water-filled hot water bag",
+      "sourceRow": 119
+    },
+    {
+      "id": "JD-0120",
+      "name": "使用喷雾杀虫剂",
+      "sourceEn": "Operate spray insecticide",
+      "sourceRow": 120
+    },
+    {
+      "id": "JD-0121",
+      "name": "给电动牙刷充电",
+      "sourceEn": "Charge electric toothbrush",
+      "sourceRow": 121
+    },
+    {
+      "id": "JD-0122",
+      "name": "挤出软管颜料",
+      "sourceEn": "Squeeze tube paint",
+      "sourceRow": 122
+    },
+    {
+      "id": "JD-0123",
+      "name": "使用喷油瓶",
+      "sourceEn": "Operate oil spray bottle",
+      "sourceRow": 123
+    },
+    {
+      "id": "JD-0124",
+      "name": "使用食物罩",
+      "sourceEn": "Use food cover",
+      "sourceRow": 124
+    },
+    {
+      "id": "JD-0125",
+      "name": "翻台历",
+      "sourceEn": "Turn desktop calendar page",
+      "sourceRow": 125
+    },
+    {
+      "id": "JD-0126",
+      "name": "使用手电筒",
+      "sourceEn": "Use flashlight",
+      "sourceRow": 126
+    },
+    {
+      "id": "JD-0127",
+      "name": "给热水袋充电",
+      "sourceEn": "Charge hot water bag",
+      "sourceRow": 127
+    },
+    {
+      "id": "JD-0128",
+      "name": "使用锡纸",
+      "sourceEn": "Use tin foil",
+      "sourceRow": 128
+    },
+    {
+      "id": "JD-0129",
+      "name": "使用玻璃水杯",
+      "sourceEn": "Use drinking glass",
+      "sourceRow": 129
+    },
+    {
+      "id": "JD-0130",
+      "name": "使用润滑剂",
+      "sourceEn": "Use lubricant",
+      "sourceRow": 130
+    },
+    {
+      "id": "JD-0131",
+      "name": "使用旅行转换插头",
+      "sourceEn": "Operate travel adapter",
+      "sourceRow": 131
+    },
+    {
+      "id": "JD-0132",
+      "name": "使用一次性餐垫",
+      "sourceEn": "Use disposable table mat",
+      "sourceRow": 132
+    },
+    {
+      "id": "JD-0133",
+      "name": "使用一次性餐盘",
+      "sourceEn": "Use disposable plate",
+      "sourceRow": 133
+    },
+    {
+      "id": "JD-0134",
+      "name": "使用防滑垫",
+      "sourceEn": "Use anti-slip mat",
+      "sourceRow": 134
+    },
+    {
+      "id": "JD-0135",
+      "name": "使用蒸笼纸",
+      "sourceEn": "Use steaming paper",
+      "sourceRow": 135
+    },
+    {
+      "id": "JD-0136",
+      "name": "使用 S 形挂钩",
+      "sourceEn": "Use S-hook",
+      "sourceRow": 136
+    },
+    {
+      "id": "JD-0137",
+      "name": "使用一次性浴缸袋",
+      "sourceEn": "Use disposable bath bag",
+      "sourceRow": 137
+    },
+    {
+      "id": "JD-0138",
+      "name": "搭帐篷",
+      "sourceEn": "Set up tent",
+      "sourceRow": 138
+    },
+    {
+      "id": "JD-0139",
+      "name": "使用魔术贴",
+      "sourceEn": "Use Velcro",
+      "sourceRow": 139
+    },
+    {
+      "id": "JD-0140",
+      "name": "使用保鲜膜",
+      "sourceEn": "Use the plastic wrap",
+      "sourceRow": 140
+    },
+    {
+      "id": "JD-0141",
+      "name": "使用护手霜",
+      "sourceEn": "Use the hand cream",
+      "sourceRow": 141
+    },
+    {
+      "id": "JD-0142",
+      "name": "使用自拍杆",
+      "sourceEn": "Operate selfie stick",
+      "sourceRow": 142
+    },
+    {
+      "id": "JD-0143",
+      "name": "使用一次性杯子",
+      "sourceEn": "Use disposable cup",
+      "sourceRow": 143
+    },
+    {
+      "id": "JD-0144",
+      "name": "使用钢尺",
+      "sourceEn": "Use steel ruler",
+      "sourceRow": 144
+    },
+    {
+      "id": "JD-0145",
+      "name": "使用醒酒器",
+      "sourceEn": "Use decanter",
+      "sourceRow": 145
+    },
+    {
+      "id": "JD-0146",
+      "name": "打开特殊包装",
+      "sourceEn": "Open special packaging",
+      "sourceRow": 146
+    },
+    {
+      "id": "JD-0147",
+      "name": "组装钥匙扣",
+      "sourceEn": "Assemble keychain",
+      "sourceRow": 147
+    },
+    {
+      "id": "JD-0148",
+      "name": "使用固体胶",
+      "sourceEn": "Use glue stick",
+      "sourceRow": 148
+    },
+    {
+      "id": "JD-0149",
+      "name": "使用卷尺",
+      "sourceEn": "Use tape measure",
+      "sourceRow": 149
+    },
+    {
+      "id": "JD-0150",
+      "name": "使用软尺",
+      "sourceEn": "Use soft tape measure",
+      "sourceRow": 150
+    },
+    {
+      "id": "JD-0151",
+      "name": "使用卷笔刀",
+      "sourceEn": "Use pencil sharpener",
+      "sourceRow": 151
+    },
+    {
+      "id": "JD-0152",
+      "name": "使用钢卷尺",
+      "sourceEn": "Use steel tape measure",
+      "sourceRow": 152
+    },
+    {
+      "id": "JD-0153",
+      "name": "使用钳子",
+      "sourceEn": "Use pliers",
+      "sourceRow": 153
+    },
+    {
+      "id": "JD-0154",
+      "name": "安装马桶座圈",
+      "sourceEn": "Install toilet seat",
+      "sourceRow": 154
+    },
+    {
+      "id": "JD-0155",
+      "name": "安装自拍杆",
+      "sourceEn": "Install selfie stick",
+      "sourceRow": 155
+    },
+    {
+      "id": "JD-0156",
+      "name": "使用自封袋",
+      "sourceEn": "Operate the resealable bag",
+      "sourceRow": 156
+    },
+    {
+      "id": "JD-0157",
+      "name": "使用收纳篮",
+      "sourceEn": "Operate storage basket",
+      "sourceRow": 157
+    },
+    {
+      "id": "JD-0158",
+      "name": "使用棉签",
+      "sourceEn": "Use the cotton swab",
+      "sourceRow": 158
+    },
+    {
+      "id": "JD-0159",
+      "name": "使用水桶",
+      "sourceEn": "Use bucket",
+      "sourceRow": 159
+    },
+    {
+      "id": "JD-0160",
+      "name": "用夹具夹持物品",
+      "sourceEn": "Grip items with clamp",
+      "sourceRow": 160
+    },
+    {
+      "id": "JD-0161",
+      "name": "使用胶带",
+      "sourceEn": "Use the tape",
+      "sourceRow": 161
+    },
+    {
+      "id": "JD-0162",
+      "name": "使用镊子",
+      "sourceEn": "Use tweezers",
+      "sourceRow": 162
+    },
+    {
+      "id": "JD-0163",
+      "name": "使用勺子",
+      "sourceEn": "Work with spoon",
+      "sourceRow": 163
+    },
+    {
+      "id": "JD-0164",
+      "name": "用电子秤称重",
+      "sourceEn": "Weigh item with electronic scale",
+      "sourceRow": 164
+    },
+    {
+      "id": "JD-0165",
+      "name": "使用蚊香",
+      "sourceEn": "Use mosquito coil",
+      "sourceRow": 165
+    },
+    {
+      "id": "JD-0166",
+      "name": "使用喷雾瓶",
+      "sourceEn": "Use spray bottle",
+      "sourceRow": 166
+    },
+    {
+      "id": "JD-0167",
+      "name": "磨刀",
+      "sourceEn": "Sharpen knife",
+      "sourceRow": 167
+    },
+    {
+      "id": "JD-0168",
+      "name": "使用叉子",
+      "sourceEn": "Use fork",
+      "sourceRow": 168
+    },
+    {
+      "id": "JD-0169",
+      "name": "安装手机支架",
+      "sourceEn": "Install phone stand",
+      "sourceRow": 169
+    },
+    {
+      "id": "JD-0170",
+      "name": "点燃蜡烛",
+      "sourceEn": "Light candle",
+      "sourceRow": 170
+    },
+    {
+      "id": "JD-0171",
+      "name": "盖章",
+      "sourceEn": "Stamp",
+      "sourceRow": 171
+    },
+    {
+      "id": "JD-0172",
+      "name": "使用胶水",
+      "sourceEn": "Use the glue",
+      "sourceRow": 172
+    },
+    {
+      "id": "JD-0173",
+      "name": "使用手缝针线",
+      "sourceEn": "Operate hand sewing needle and thread",
+      "sourceRow": 173
+    },
+    {
+      "id": "JD-0174",
+      "name": "使用橡皮筋",
+      "sourceEn": "Operate rubber bands",
+      "sourceRow": 174
+    },
+    {
+      "id": "JD-0175",
+      "name": "使用保鲜膜",
+      "sourceEn": "Operate the plastic wrap",
+      "sourceRow": 175
+    },
+    {
+      "id": "JD-0176",
+      "name": "使用铅笔",
+      "sourceEn": "Operate pencil",
+      "sourceRow": 176
+    },
+    {
+      "id": "JD-0177",
+      "name": "使用刨丝器",
+      "sourceEn": "Operate the grater",
+      "sourceRow": 177
+    },
+    {
+      "id": "JD-0178",
+      "name": "使用自封袋",
+      "sourceEn": "Operate the resealable bag",
+      "sourceRow": 178
+    },
+    {
+      "id": "JD-0179",
+      "name": "使用封口夹",
+      "sourceEn": "Operate sealing clip",
+      "sourceRow": 179
+    },
+    {
+      "id": "JD-0180",
+      "name": "拆包装",
+      "sourceEn": "Open package",
+      "sourceRow": 180
+    },
+    {
+      "id": "JD-0181",
+      "name": "打开药品包装",
+      "sourceEn": "open the medicine packaging",
+      "sourceRow": 181
+    },
+    {
+      "id": "JD-0182",
+      "name": "使用打火机",
+      "sourceEn": "Operate lighter",
+      "sourceRow": 182
+    },
+    {
+      "id": "JD-0183",
+      "name": "打开食品包装",
+      "sourceEn": "Open food package",
+      "sourceRow": 183
+    },
+    {
+      "id": "JD-0184",
+      "name": "打开日用品包装",
+      "sourceEn": "Open daily necessities package",
+      "sourceRow": 184
+    },
+    {
+      "id": "JD-0185",
+      "name": "使用捆绑带",
+      "sourceEn": "Operate the tie-down strap",
+      "sourceRow": 185
+    },
+    {
+      "id": "JD-0186",
+      "name": "打开服装包装",
+      "sourceEn": "Open the garment packaging",
+      "sourceRow": 186
+    },
+    {
+      "id": "JD-0187",
+      "name": "使用漏斗",
+      "sourceEn": "Operate funnel",
+      "sourceRow": 187
+    },
+    {
+      "id": "JD-0188",
+      "name": "打开文具包装",
+      "sourceEn": "Open stationery packages",
+      "sourceRow": 188
+    },
+    {
+      "id": "JD-0189",
+      "name": "使用滤网",
+      "sourceEn": "Operate filter",
+      "sourceRow": 189
+    },
+    {
+      "id": "JD-0190",
+      "name": "用橡皮筋扎紧已开封的零食袋",
+      "sourceEn": "Bundle open snack bags with rubber bands",
+      "sourceRow": 190
+    },
+    {
+      "id": "JD-0191",
+      "name": "使用磁铁",
+      "sourceEn": "Operate magnet",
+      "sourceRow": 191
+    },
+    {
+      "id": "JD-0192",
+      "name": "使用打气筒",
+      "sourceEn": "Operate the air pump",
+      "sourceRow": 192
+    },
+    {
+      "id": "JD-0193",
+      "name": "用橡皮筋扎紧食品用手套包装袋的袋口",
+      "sourceEn": "Bundle the opening of food-safe glove packs with rubber bands",
+      "sourceRow": 193
+    },
+    {
+      "id": "JD-0194",
+      "name": "使用搭扣",
+      "sourceEn": "Operate the buckle",
+      "sourceRow": 194
+    },
+    {
+      "id": "JD-0195",
+      "name": "使用开瓶器",
+      "sourceEn": "Operate the bottle opener",
+      "sourceRow": 195
+    },
+    {
+      "id": "JD-0196",
+      "name": "使用图钉",
+      "sourceEn": "Operate thumbtacks",
+      "sourceRow": 196
+    },
+    {
+      "id": "JD-0197",
+      "name": "操作缝纫机",
+      "sourceEn": "Operate the sewing machine",
+      "sourceRow": 197
+    },
+    {
+      "id": "JD-0198",
+      "name": "使用伸缩梯",
+      "sourceEn": "Operate the retractable ladder",
+      "sourceRow": 198
+    },
+    {
+      "id": "JD-0199",
+      "name": "使用裱花袋",
+      "sourceEn": "Operate piping bag",
+      "sourceRow": 199
+    },
+    {
+      "id": "JD-0200",
+      "name": "使用开罐器",
+      "sourceEn": "Operate the can opener",
+      "sourceRow": 200
+    },
+    {
+      "id": "JD-0201",
+      "name": "使用剪刀",
+      "sourceEn": "Operate scissors",
+      "sourceRow": 201
+    },
+    {
+      "id": "JD-0202",
+      "name": "使用美工刀",
+      "sourceEn": "Operate the utility knife",
+      "sourceRow": 202
+    },
+    {
+      "id": "JD-0203",
+      "name": "使用卷笔刀",
+      "sourceEn": "Operate pencil sharpener",
+      "sourceRow": 203
+    },
+    {
+      "id": "JD-0204",
+      "name": "用橡皮筋捆扎儿童画笔",
+      "sourceEn": "Bundle children's paintbrushes with rubber bands",
+      "sourceRow": 204
+    },
+    {
+      "id": "JD-0205",
+      "name": "使用漏斗",
+      "sourceEn": "Use funnel",
+      "sourceRow": 205
+    },
+    {
+      "id": "JD-0206",
+      "name": "使用订书机",
+      "sourceEn": "Operate the stapler",
+      "sourceRow": 206
+    },
+    {
+      "id": "JD-0207",
+      "name": "使用塑料袋",
+      "sourceEn": "Use plastic bags",
+      "sourceRow": 207
+    },
+    {
+      "id": "JD-0208",
+      "name": "使用胶带",
+      "sourceEn": "Use the tape",
+      "sourceRow": 208
+    },
+    {
+      "id": "JD-0209",
+      "name": "使用棉签",
+      "sourceEn": "Use the cotton swab",
+      "sourceRow": 209
+    },
+    {
+      "id": "JD-0210",
+      "name": "使用磨刀石",
+      "sourceEn": "Operate sharpening stone",
+      "sourceRow": 210
+    },
+    {
+      "id": "JD-0211",
+      "name": "使用裁缝剪刀",
+      "sourceEn": "Operate the sewing scissors",
+      "sourceRow": 211
+    },
+    {
+      "id": "JD-0212",
+      "name": "使用软尺",
+      "sourceEn": "Operate soft tape measure",
+      "sourceRow": 212
+    },
+    {
+      "id": "JD-0213",
+      "name": "用橡皮筋捆扎独立包装的口罩",
+      "sourceEn": "Bundle individually wrapped masks with rubber bands",
+      "sourceRow": 213
+    },
+    {
+      "id": "JD-0214",
+      "name": "用橡皮筋捆扎铅笔和橡皮套装",
+      "sourceEn": "Bundle pencilnd eraser sets with rubber bands",
+      "sourceRow": 214
+    },
+    {
+      "id": "JD-0215",
+      "name": "用橡皮筋捆扎化妆刷套装",
+      "sourceEn": "Bundle makeup brush sets with rubber bands",
+      "sourceRow": 215
+    },
+    {
+      "id": "JD-0216",
+      "name": "用橡皮筋捆扎零散积木配件",
+      "sourceEn": "Bundle loose building-blockccessories with rubber bands",
+      "sourceRow": 216
+    },
+    {
+      "id": "JD-0217",
+      "name": "用橡皮筋捆扎卷筒卫生纸",
+      "sourceEn": "Bundle rolled toilet paper with rubber bands",
+      "sourceRow": 217
+    },
+    {
+      "id": "JD-0218",
+      "name": "用橡皮筋捆扎塑料吸管",
+      "sourceEn": "Bundle plastic straws with rubber bands",
+      "sourceRow": 218
+    },
+    {
+      "id": "JD-0219",
+      "name": "将发圈装入小收纳袋并用橡皮筋扎紧",
+      "sourceEn": "Bundle hair ties into small storage pouch with rubber bands",
+      "sourceRow": 219
+    },
+    {
+      "id": "JD-0220",
+      "name": "用橡皮筋捆扎纸质小票",
+      "sourceEn": "Bundle paper receipts with rubber bands",
+      "sourceRow": 220
+    },
+    {
+      "id": "JD-0221",
+      "name": "用橡皮筋捆扎闲置的围裙系带",
+      "sourceEn": "Bundle idlepron ties with rubber bands",
+      "sourceRow": 221
+    },
+    {
+      "id": "JD-0222",
+      "name": "用刨丝器将甜椒刨成薄片",
+      "sourceEn": "Shred bell peppers into thin slices with grater",
+      "sourceRow": 222
+    },
+    {
+      "id": "JD-0223",
+      "name": "使用锤子",
+      "sourceEn": "Operate hammer",
+      "sourceRow": 223
+    },
+    {
+      "id": "JD-0224",
+      "name": "打磨木材",
+      "sourceEn": "Sand wood",
+      "sourceRow": 224
+    },
+    {
+      "id": "JD-0225",
+      "name": "用橡皮筋捆扎一次性纸杯",
+      "sourceEn": "Bundle disposable paper cups with rubber bands",
+      "sourceRow": 225
+    },
+    {
+      "id": "JD-0226",
+      "name": "使用铅笔",
+      "sourceEn": "Use the pencil",
+      "sourceRow": 226
+    },
+    {
+      "id": "JD-0227",
+      "name": "使用密封袋",
+      "sourceEn": "Use sealed bag",
+      "sourceRow": 227
+    },
+    {
+      "id": "JD-0228",
+      "name": "使用裁缝划粉",
+      "sourceEn": "Use the tailor's chalk",
+      "sourceRow": 228
+    },
+    {
+      "id": "JD-0229",
+      "name": "使用美工刀",
+      "sourceEn": "Use the utility knife",
+      "sourceRow": 229
+    },
+    {
+      "id": "JD-0230",
+      "name": "使用量杯",
+      "sourceEn": "Use the measuring cup",
+      "sourceRow": 230
+    },
+    {
+      "id": "JD-0231",
+      "name": "拧开瓶盖",
+      "sourceEn": "Twist off the bottle cap",
+      "sourceRow": 231
+    },
+    {
+      "id": "JD-0232",
+      "name": "挤牙膏",
+      "sourceEn": "Squeeze toothpaste",
+      "sourceRow": 232
+    },
+    {
+      "id": "JD-0233",
+      "name": "拆包装",
+      "sourceEn": "Package Opening",
+      "sourceRow": 233
+    },
+    {
+      "id": "JD-0234",
+      "name": "DIY 扭扭棒手工",
+      "sourceEn": "DIY Twist‑Craft",
+      "sourceRow": 234
+    },
+    {
+      "id": "JD-0235",
+      "name": "给耳机充电",
+      "sourceEn": "Charge headphones",
+      "sourceRow": 235
+    },
+    {
+      "id": "JD-0236",
+      "name": "给手机充电",
+      "sourceEn": "Charge mobile phone",
+      "sourceRow": 236
+    },
+    {
+      "id": "JD-0237",
+      "name": "给手表充电",
+      "sourceEn": "Recharge the wristwatch",
+      "sourceRow": 237
+    },
+    {
+      "id": "JD-0238",
+      "name": "操作打印机",
+      "sourceEn": "Operate the printer",
+      "sourceRow": 238
+    },
+    {
+      "id": "JD-0239",
+      "name": "给电脑充电",
+      "sourceEn": "Charge computer",
+      "sourceRow": 239
+    },
+    {
+      "id": "JD-0240",
+      "name": "给平板电脑充电",
+      "sourceEn": "Charge tablet",
+      "sourceRow": 240
+    },
+    {
+      "id": "JD-0241",
+      "name": "给电子设备充电",
+      "sourceEn": "Charge electronic device",
+      "sourceRow": 241
+    },
+    {
+      "id": "JD-0242",
+      "name": "使用电脑包",
+      "sourceEn": "Use computer bag",
+      "sourceRow": 242
+    },
+    {
+      "id": "JD-0243",
+      "name": "给音箱充电",
+      "sourceEn": "Charge the speaker",
+      "sourceRow": 243
+    },
+    {
+      "id": "JD-0244",
+      "name": "给充电宝充电",
+      "sourceEn": "Charge power bank",
+      "sourceRow": 244
+    },
+    {
+      "id": "JD-0245",
+      "name": "连接显示器",
+      "sourceEn": "Connect monitor",
+      "sourceRow": 245
+    },
+    {
+      "id": "JD-0246",
+      "name": "安装手机壳",
+      "sourceEn": "Install phone case",
+      "sourceRow": 246
+    },
+    {
+      "id": "JD-0247",
+      "name": "安装平板保护壳",
+      "sourceEn": "Install tablet case",
+      "sourceRow": 247
+    },
+    {
+      "id": "JD-0248",
+      "name": "安装路由器",
+      "sourceEn": "Install router",
+      "sourceRow": 248
+    },
+    {
+      "id": "JD-0249",
+      "name": "安装手机支架",
+      "sourceEn": "Install phone stand",
+      "sourceRow": 249
+    },
+    {
+      "id": "JD-0250",
+      "name": "关闭并锁好门窗",
+      "sourceEn": "Close and lock doors and windows",
+      "sourceRow": 250
+    },
+    {
+      "id": "JD-0251",
+      "name": "处理危险品",
+      "sourceEn": "Handle dangerous goods",
+      "sourceRow": 251
+    },
+    {
+      "id": "JD-0252",
+      "name": "防滑防摔",
+      "sourceEn": "Anti-slip and anti-fall",
+      "sourceRow": 252
+    },
+    {
+      "id": "JD-0253",
+      "name": "安全管理药品",
+      "sourceEn": "Manage medicines safely",
+      "sourceRow": 253
+    },
+    {
+      "id": "JD-0254",
+      "name": "使用吹风机",
+      "sourceEn": "Operate hair dryer",
+      "sourceRow": 254
+    },
+    {
+      "id": "JD-0255",
+      "name": "操作空气净化器",
+      "sourceEn": "Operate air purifier",
+      "sourceRow": 255
+    },
+    {
+      "id": "JD-0256",
+      "name": "断电",
+      "sourceEn": "Power off",
+      "sourceRow": 256
+    },
+    {
+      "id": "JD-0257",
+      "name": "关闭燃气灶",
+      "sourceEn": "Turn off gas stove",
+      "sourceRow": 257
+    },
+    {
+      "id": "JD-0258",
+      "name": "关闭燃气阀门",
+      "sourceEn": "Turn off the gas valve",
+      "sourceRow": 258
+    },
+    {
+      "id": "JD-0259",
+      "name": "锁好门窗",
+      "sourceEn": "Lock the doors and windows",
+      "sourceRow": 259
+    },
+    {
+      "id": "JD-0260",
+      "name": "处理尖锐物品",
+      "sourceEn": "Handle sharps",
+      "sourceRow": 260
+    },
+    {
+      "id": "JD-0261",
+      "name": "进行防滑处理",
+      "sourceEn": "Apply anti-slip treatment",
+      "sourceRow": 261
+    },
+    {
+      "id": "JD-0262",
+      "name": "处理碎玻璃",
+      "sourceEn": "Handle broken glass",
+      "sourceRow": 262
+    },
+    {
+      "id": "JD-0263",
+      "name": "清理地面电线",
+      "sourceEn": "Clear floor wire",
+      "sourceRow": 263
+    },
+    {
+      "id": "JD-0264",
+      "name": "检查并维修线路",
+      "sourceEn": "Inspect and repair line",
+      "sourceRow": 264
+    },
+    {
+      "id": "JD-0265",
+      "name": "理平地毯边缘",
+      "sourceEn": "Straighten carpet edge",
+      "sourceRow": 265
+    },
+    {
+      "id": "JD-0266",
+      "name": "安装防撞角",
+      "sourceEn": "Install corner guards",
+      "sourceRow": 266
+    },
+    {
+      "id": "JD-0267",
+      "name": "使用婴儿推车",
+      "sourceEn": "Operate the stroller",
+      "sourceRow": 267
+    },
+    {
+      "id": "JD-0268",
+      "name": "开关门",
+      "sourceEn": "open and close the door",
+      "sourceRow": 268
+    },
+    {
+      "id": "JD-0269",
+      "name": "操作窗帘",
+      "sourceEn": "Operate curtain",
+      "sourceRow": 269
+    },
+    {
+      "id": "JD-0270",
+      "name": "开关窗户",
+      "sourceEn": "Open and close window",
+      "sourceRow": 270
+    },
+    {
+      "id": "JD-0271",
+      "name": "锁门",
+      "sourceEn": "Lock door",
+      "sourceRow": 271
+    },
+    {
+      "id": "JD-0272",
+      "name": "锁窗",
+      "sourceEn": "Lock window",
+      "sourceRow": 272
+    },
+    {
+      "id": "JD-0273",
+      "name": "关闭纱窗",
+      "sourceEn": "Close screen window",
+      "sourceRow": 273
+    },
+    {
+      "id": "JD-0274",
+      "name": "打开纱窗",
+      "sourceEn": "Open screen window",
+      "sourceRow": 274
+    },
+    {
+      "id": "JD-0275",
+      "name": "安装纱窗",
+      "sourceEn": "Install screen window",
+      "sourceRow": 275
+    },
+    {
+      "id": "JD-0276",
+      "name": "安装门帘",
+      "sourceEn": "Install door curtain",
+      "sourceRow": 276
+    },
+    {
+      "id": "JD-0277",
+      "name": "操作桌上足球",
+      "sourceEn": "Operate table football",
+      "sourceRow": 277
+    },
+    {
+      "id": "JD-0278",
+      "name": "使用餐具",
+      "sourceEn": "Operate utensil",
+      "sourceRow": 278
+    },
+    {
+      "id": "JD-0279",
+      "name": "拆卸分离",
+      "sourceEn": "Disassemble and separate",
+      "sourceRow": 279
+    },
+    {
+      "id": "JD-0280",
+      "name": "组装零部件",
+      "sourceEn": "Assemble components",
+      "sourceRow": 280
+    },
+    {
+      "id": "JD-0281",
+      "name": "分类整理螺丝",
+      "sourceEn": "Sort screw",
+      "sourceRow": 281
+    },
+    {
+      "id": "JD-0282",
+      "name": "组装电风扇",
+      "sourceEn": "Assemble electric fan",
+      "sourceRow": 282
+    },
+    {
+      "id": "JD-0283",
+      "name": "使用手动工具组装家具",
+      "sourceEn": "Furniture Assembly with Hand Tools",
+      "sourceRow": 283
+    },
+    {
+      "id": "JD-0284",
+      "name": "用螺丝刀更换计算器电池",
+      "sourceEn": "Replace calculator battery with screwdriver",
+      "sourceRow": 284
+    },
+    {
+      "id": "JD-0285",
+      "name": "调试校准",
+      "sourceEn": "Debug and calibrate",
+      "sourceRow": 285
+    },
+    {
+      "id": "JD-0286",
+      "name": "组装自行车",
+      "sourceEn": "Assemble bicycle",
+      "sourceRow": 286
+    },
+    {
+      "id": "JD-0287",
+      "name": "安装地漏盖",
+      "sourceEn": "Install floor drain cover",
+      "sourceRow": 287
+    },
+    {
+      "id": "JD-0288",
+      "name": "使用热熔胶枪",
+      "sourceEn": "Use hot glue gun",
+      "sourceRow": 288
+    },
+    {
+      "id": "JD-0289",
+      "name": "铺设游戏垫",
+      "sourceEn": "Lay out play mat",
+      "sourceRow": 289
+    },
+    {
+      "id": "JD-0290",
+      "name": "使用手锯",
+      "sourceEn": "Use hand saw",
+      "sourceRow": 290
+    },
+    {
+      "id": "JD-0291",
+      "name": "安装浴帘",
+      "sourceEn": "Install shower curtain",
+      "sourceRow": 291
+    },
+    {
+      "id": "JD-0292",
+      "name": "更换灯具",
+      "sourceEn": "Replace light fixtures",
+      "sourceRow": 292
+    },
+    {
+      "id": "JD-0293",
+      "name": "锁具",
+      "sourceEn": "Locks",
+      "sourceRow": 293
+    },
+    {
+      "id": "JD-0294",
+      "name": "安装壁挂支架",
+      "sourceEn": "Install wall mount",
+      "sourceRow": 294
+    },
+    {
+      "id": "JD-0295",
+      "name": "更换电池",
+      "sourceEn": "Replace battery",
+      "sourceRow": 295
+    },
+    {
+      "id": "JD-0296",
+      "name": "润滑锁具",
+      "sourceEn": "Lubricate lock",
+      "sourceRow": 296
+    },
+    {
+      "id": "JD-0297",
+      "name": "办公室装修",
+      "sourceEn": "Office Renovation",
+      "sourceRow": 297
+    },
+    {
+      "id": "JD-0298",
+      "name": "汽车维修",
+      "sourceEn": "Auto Repair",
+      "sourceRow": 298
+    },
+    {
+      "id": "JD-0299",
+      "name": "屏幕保护膜",
+      "sourceEn": "Screen Protector",
+      "sourceRow": 299
+    },
+    {
+      "id": "JD-0300",
+      "name": "操作打印机",
+      "sourceEn": "Operate the printer",
+      "sourceRow": 300
+    },
+    {
+      "id": "JD-0301",
+      "name": "使用起钉器",
+      "sourceEn": "Operate the staple remover",
+      "sourceRow": 301
+    },
+    {
+      "id": "JD-0302",
+      "name": "使用订书钉",
+      "sourceEn": "Operate staples",
+      "sourceRow": 302
+    },
+    {
+      "id": "JD-0303",
+      "name": "拆卸货架",
+      "sourceEn": "Disassemble shelf",
+      "sourceRow": 303
+    },
+    {
+      "id": "JD-0304",
+      "name": "组装货架",
+      "sourceEn": "Assemble shelf",
+      "sourceRow": 304
+    },
+    {
+      "id": "JD-0305",
+      "name": "给图书贴磁条",
+      "sourceEn": "Attach magnetic strip to book",
+      "sourceRow": 305
+    }
+  ],
+  "materials": [
+    {
+      "id": "M-0001",
+      "name": "枕头"
+    },
+    {
+      "id": "M-0002",
+      "name": "枕套"
+    },
+    {
+      "id": "M-0003",
+      "name": "床单"
+    },
+    {
+      "id": "M-0004",
+      "name": "被套"
+    },
+    {
+      "id": "M-0005",
+      "name": "被子"
+    },
+    {
+      "id": "M-0006",
+      "name": "衣物"
+    },
+    {
+      "id": "M-0007",
+      "name": "衣架"
+    },
+    {
+      "id": "M-0008",
+      "name": "拖鞋"
+    },
+    {
+      "id": "M-0009",
+      "name": "收纳盒"
+    },
+    {
+      "id": "M-0010",
+      "name": "抱枕"
+    },
+    {
+      "id": "M-0011",
+      "name": "玩具"
+    },
+    {
+      "id": "M-0012",
+      "name": "收纳篮"
+    },
+    {
+      "id": "M-0013",
+      "name": "遥控器"
+    },
+    {
+      "id": "M-0014",
+      "name": "锅具"
+    },
+    {
+      "id": "M-0015",
+      "name": "锅盖"
+    },
+    {
+      "id": "M-0016",
+      "name": "碗盘"
+    },
+    {
+      "id": "M-0017",
+      "name": "刀具"
+    },
+    {
+      "id": "M-0018",
+      "name": "砧板"
+    },
+    {
+      "id": "M-0019",
+      "name": "调料瓶"
+    },
+    {
+      "id": "M-0020",
+      "name": "油壶"
+    },
+    {
+      "id": "M-0021",
+      "name": "食材"
+    },
+    {
+      "id": "M-0022",
+      "name": "保鲜盒"
+    },
+    {
+      "id": "M-0023",
+      "name": "厨房纸"
+    },
+    {
+      "id": "M-0024",
+      "name": "筷子"
+    },
+    {
+      "id": "M-0025",
+      "name": "勺子"
+    },
+    {
+      "id": "M-0026",
+      "name": "杯具"
+    },
+    {
+      "id": "M-0027",
+      "name": "茶具"
+    },
+    {
+      "id": "M-0028",
+      "name": "餐垫"
+    },
+    {
+      "id": "M-0029",
+      "name": "纸巾"
+    },
+    {
+      "id": "M-0030",
+      "name": "纸巾盒"
+    },
+    {
+      "id": "M-0031",
+      "name": "餐盒"
+    },
+    {
+      "id": "M-0032",
+      "name": "牙刷"
+    },
+    {
+      "id": "M-0033",
+      "name": "牙膏"
+    },
+    {
+      "id": "M-0034",
+      "name": "漱口杯"
+    },
+    {
+      "id": "M-0035",
+      "name": "毛巾"
+    },
+    {
+      "id": "M-0036",
+      "name": "洗手液"
+    },
+    {
+      "id": "M-0037",
+      "name": "洗发水瓶"
+    },
+    {
+      "id": "M-0038",
+      "name": "沐浴露瓶"
+    },
+    {
+      "id": "M-0039",
+      "name": "卫生纸"
+    },
+    {
+      "id": "M-0040",
+      "name": "清洁刷"
+    },
+    {
+      "id": "M-0041",
+      "name": "书籍"
+    },
+    {
+      "id": "M-0042",
+      "name": "杂志"
+    },
+    {
+      "id": "M-0043",
+      "name": "笔"
+    },
+    {
+      "id": "M-0044",
+      "name": "本子"
+    },
+    {
+      "id": "M-0045",
+      "name": "文件夹"
+    },
+    {
+      "id": "M-0046",
+      "name": "台灯"
+    },
+    {
+      "id": "M-0047",
+      "name": "键盘"
+    },
+    {
+      "id": "M-0048",
+      "name": "鼠标"
+    },
+    {
+      "id": "M-0049",
+      "name": "充电线"
+    },
+    {
+      "id": "M-0050",
+      "name": "文件"
+    },
+    {
+      "id": "M-0051",
+      "name": "纸张"
+    },
+    {
+      "id": "M-0052",
+      "name": "订书机"
+    },
+    {
+      "id": "M-0053",
+      "name": "回形针"
+    },
+    {
+      "id": "M-0054",
+      "name": "会议遥控器"
+    },
+    {
+      "id": "M-0055",
+      "name": "杯子"
+    },
+    {
+      "id": "M-0056",
+      "name": "茶包"
+    },
+    {
+      "id": "M-0057",
+      "name": "护肤品瓶罐"
+    },
+    {
+      "id": "M-0058",
+      "name": "化妆刷"
+    },
+    {
+      "id": "M-0059",
+      "name": "梳子"
+    },
+    {
+      "id": "M-0060",
+      "name": "镜子"
+    },
+    {
+      "id": "M-0061",
+      "name": "口红"
+    },
+    {
+      "id": "M-0062",
+      "name": "化妆棉"
+    },
+    {
+      "id": "M-0063",
+      "name": "发夹"
+    },
+    {
+      "id": "M-0064",
+      "name": "首饰盒"
+    },
+    {
+      "id": "M-0065",
+      "name": "快递包裹"
+    },
+    {
+      "id": "M-0066",
+      "name": "纸箱"
+    },
+    {
+      "id": "M-0067",
+      "name": "快递袋"
+    },
+    {
+      "id": "M-0068",
+      "name": "周转箱"
+    },
+    {
+      "id": "M-0069",
+      "name": "分拣筐"
+    },
+    {
+      "id": "M-0070",
+      "name": "面单"
+    },
+    {
+      "id": "M-0071",
+      "name": "条码标签"
+    },
+    {
+      "id": "M-0072",
+      "name": "零件盒"
+    },
+    {
+      "id": "M-0073",
+      "name": "料盒"
+    },
+    {
+      "id": "M-0074",
+      "name": "包装袋"
+    },
+    {
+      "id": "M-0075",
+      "name": "胶带"
+    },
+    {
+      "id": "M-0076",
+      "name": "标签"
+    },
+    {
+      "id": "M-0077",
+      "name": "条码单"
+    },
+    {
+      "id": "M-0078",
+      "name": "托盘"
+    },
+    {
+      "id": "M-0079",
+      "name": "打包带"
+    },
+    {
+      "id": "M-0080",
+      "name": "饮料杯"
+    },
+    {
+      "id": "M-0081",
+      "name": "杯盖"
+    },
+    {
+      "id": "M-0082",
+      "name": "吸管"
+    },
+    {
+      "id": "M-0083",
+      "name": "雪克杯"
+    },
+    {
+      "id": "M-0084",
+      "name": "量杯"
+    },
+    {
+      "id": "M-0085",
+      "name": "茶叶"
+    },
+    {
+      "id": "M-0086",
+      "name": "奶制品包装"
+    },
+    {
+      "id": "M-0087",
+      "name": "糖浆瓶"
+    },
+    {
+      "id": "M-0088",
+      "name": "配料盒"
+    },
+    {
+      "id": "M-0089",
+      "name": "封口膜"
+    },
+    {
+      "id": "M-0090",
+      "name": "咖啡豆"
+    },
+    {
+      "id": "M-0091",
+      "name": "咖啡杯"
+    },
+    {
+      "id": "M-0092",
+      "name": "滤纸"
+    },
+    {
+      "id": "M-0093",
+      "name": "滤杯"
+    },
+    {
+      "id": "M-0094",
+      "name": "咖啡粉碗"
+    },
+    {
+      "id": "M-0095",
+      "name": "压粉器"
+    },
+    {
+      "id": "M-0096",
+      "name": "拉花缸"
+    },
+    {
+      "id": "M-0097",
+      "name": "奶盒"
+    },
+    {
+      "id": "M-0098",
+      "name": "搅拌棒"
+    },
+    {
+      "id": "M-0099",
+      "name": "袋装零食"
+    },
+    {
+      "id": "M-0100",
+      "name": "盒装食品"
+    },
+    {
+      "id": "M-0101",
+      "name": "瓶装饮料"
+    },
+    {
+      "id": "M-0102",
+      "name": "罐装饮料"
+    },
+    {
+      "id": "M-0103",
+      "name": "盒装牛奶"
+    },
+    {
+      "id": "M-0104",
+      "name": "酸奶杯"
+    },
+    {
+      "id": "M-0105",
+      "name": "袋装速冻食品"
+    },
+    {
+      "id": "M-0106",
+      "name": "盒装冷冻食品"
+    },
+    {
+      "id": "M-0107",
+      "name": "冰淇淋"
+    },
+    {
+      "id": "M-0108",
+      "name": "水果"
+    },
+    {
+      "id": "M-0109",
+      "name": "蔬菜"
+    },
+    {
+      "id": "M-0110",
+      "name": "保鲜袋"
+    },
+    {
+      "id": "M-0111",
+      "name": "网套"
+    },
+    {
+      "id": "M-0112",
+      "name": "果蔬托盘"
+    },
+    {
+      "id": "M-0113",
+      "name": "价格标签"
+    },
+    {
+      "id": "M-0114",
+      "name": "商品包装盒"
+    },
+    {
+      "id": "M-0115",
+      "name": "购物袋"
+    },
+    {
+      "id": "M-0116",
+      "name": "小票"
+    },
+    {
+      "id": "M-0117",
+      "name": "条码贴纸"
+    },
+    {
+      "id": "M-0118",
+      "name": "扫码器"
+    },
+    {
+      "id": "M-0119",
+      "name": "食品包装托盘"
+    },
+    {
+      "id": "M-0120",
+      "name": "保温袋"
+    },
+    {
+      "id": "M-0121",
+      "name": "实验器皿"
+    },
+    {
+      "id": "M-0122",
+      "name": "样品容器"
+    },
+    {
+      "id": "M-0123",
+      "name": "试管架"
+    },
+    {
+      "id": "M-0124",
+      "name": "镊子"
+    },
+    {
+      "id": "M-0125",
+      "name": "量具"
+    },
+    {
+      "id": "M-0126",
+      "name": "工具"
+    },
+    {
+      "id": "M-0127",
+      "name": "线缆"
+    },
+    {
+      "id": "M-0128",
+      "name": "图书"
+    },
+    {
+      "id": "M-0129",
+      "name": "期刊"
+    },
+    {
+      "id": "M-0130",
+      "name": "书挡"
+    },
+    {
+      "id": "M-0131",
+      "name": "借阅卡"
+    },
+    {
+      "id": "M-0132",
+      "name": "书签"
+    },
+    {
+      "id": "M-0133",
+      "name": "索书号标签"
+    },
+    {
+      "id": "M-0134",
+      "name": "图书保护膜"
+    },
+    {
+      "id": "M-0135",
+      "name": "归还图书周转箱"
+    }
+  ]
+}
